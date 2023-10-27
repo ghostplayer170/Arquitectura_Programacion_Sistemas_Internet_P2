@@ -13,7 +13,7 @@ import getClient from "./resolvers/getClient.ts";
 import { load } from "https://deno.land/std@0.204.0/dotenv/mod.ts";
 const env = await load();
 
-const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
+//const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
 
 const MONGO_URL = "mongodb+srv://rmontenegrop:1qa2ws3ed@clusteruni.b32fnrm.mongodb.net/DataBaseTienda?retryWrites=true&w=majority";
 

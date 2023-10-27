@@ -14,7 +14,7 @@ const addInvoice = async (req: Request, res: Response) => {
     }
 
     if (!client || !products || !total) {
-      res.status(400).send("Client, price and products are required");
+      res.status(400).send("Client, total and products are required");
       return;
     }
 
