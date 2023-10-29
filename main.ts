@@ -15,7 +15,8 @@ const env = await load();
 
 //const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
 
-const MONGO_URL = "mongodb+srv://rmontenegrop:1qa2ws3ed@clusteruni.b32fnrm.mongodb.net/DataBaseTienda?retryWrites=true&w=majority";
+const MONGO_URL = "mongodb+srv://rmontenegrop:Lllubo6BT2sVncJg@clusteruni.pagju8q.mongodb.net/DataBaseStore?retryWrites=true&w=majority";
+const PORT = 3010;
 
 if (!MONGO_URL) {
   console.log("No mongo URL found");
@@ -36,6 +37,6 @@ app
   .post("/invoice", addInvoice)
   .get("/invoice/:id", getInvoice);
 
-app.listen(3000, () => {
-  console.log("Server listening on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
