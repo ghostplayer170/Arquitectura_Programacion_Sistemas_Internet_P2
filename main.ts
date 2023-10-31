@@ -39,7 +39,6 @@ app.use(express.json());
 
 // Rutas y controladores.
 app
-  .get((req: Request, res: Response) => {res.send("Welcome to Store!")})
   .post("/products", addProducts)
   .get("/products", getProducts)
   .delete("/products/:id", deleteProducts)
